@@ -92,10 +92,11 @@ export function getFieldsComponent() : FieldsComponent {
                     required:   true
                 },
 
-                correlationID: {
+                sdkCorrelationID: {
                     type:       'string',
                     required:   false,
-                    value:      getCorrelationID
+                    value:      getCorrelationID,
+                    queryParam: true
                 },
 
                 sessionID: {

@@ -131,10 +131,11 @@ export function getWalletComponent() : WalletComponent {
                     value:     getPartnerAttributionID
                 },
 
-                correlationID: {
+                sdkCorrelationID: {
                     type:       'string',
                     required:   false,
-                    value:      getCorrelationID
+                    value:      getCorrelationID,
+                    queryParam: true
                 },
 
                 sessionID: {
